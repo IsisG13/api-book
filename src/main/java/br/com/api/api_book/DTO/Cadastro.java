@@ -30,18 +30,17 @@ public class Cadastro {
     private String uf;
 
     public Cadastro(DadosCadastro dados) {
-        this.id = id;
-        this.nome = nome;
-        this.nascimento = nascimento;
-        this.contato = contato;
-        this.email = email;
-        this.cep = cep;
-        this.endereco = endereco;
-        this.numero = numero;
-        this.complemento = complemento;
-        this.bairro = bairro;
-        this.cidade = cidade;
-        this.uf = uf;
+        this.nome = dados.nome();
+        this.nascimento = dados.nascimento();
+        this.contato = dados.contato();
+        this.email = dados.email();
+        this.cep = dados.cep();
+        this.endereco = dados.endereco();
+        this.numero = dados.numero();
+        this.complemento = dados.complemento();
+        this.bairro = dados.bairro();
+        this.cidade = dados.cidade();
+        this.uf = dados.uf();
     }
 
     public String getUf() {

@@ -5,6 +5,7 @@ import jakarta.validation.constraints.NotBlank;
 public record DadosCadastro(
         Long id,
         String nome,
+        String nascimento,
         @NotBlank String contato,
         @NotBlank String email,
         String cep,
